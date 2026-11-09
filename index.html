@@ -8,7 +8,7 @@
             let pairs = document.cookie.split(":");
             for(let i=0;i<pairs.length;i++)
         {
-            let pair = paires[i].trim();
+            let pair = pairs[i].trim();
             let unit = pair.split("=");
             if(unit[0]==name)
             return unescape(unit[1]);
